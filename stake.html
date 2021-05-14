@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Rare Doge Coin</title>
+    <!-- Favicon icon -->
+
+    <!-- ================= Favicon ================== -->
+    <link href="./img/doge-logo.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="./img/doge-logo.png" rel="shortcut icon">
+    <meta content="#9f00a7" name="msapplication-TileColor">
+    <meta content="#ffffff" name="theme-color">
+
+    <!-- Custom Stylesheet -->
+    <link href="./stake/assets/plugins/owl.carousel/dist/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="./stake/assets/plugins/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link href="./stake/assets/plugins/chartist/css/chartist.min.css" rel="stylesheet">
+    <link href="./css/custom/style.css" rel="stylesheet">
+    <link href="./stake/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!--*******************
+    Preloader start
+********************-->
+<div id="preloader">
+    <div class="spinner">
+        <div class="spinner-a"></div>
+        <div class="spinner-b"></div>
+    </div>
+</div>
+<!--*******************
+    Preloader end
+********************-->
+
+
+<!--**********************************
+    Main wrapper start
+***********************************-->
+<div id="main-wrapper">
+
+    <!--**********************************
+        Nav header start
+    ***********************************-->
+    <div class="nav-header">
+        <div class="brand-logo">
+            <a href="index.html">
+                <b class="logo-abbr">RD</b>
+                <span class="brand-title">RD</span>
+            </a>
+        </div>
+
+    </div>
+
+
+    <!--**********************************
+        Nav header end
+    ***********************************-->
+
+    <!--**********************************
+        Header start
+    ***********************************-->
+    <div class="header">
+        <div class="header-content clearfix">
+            <div class="header-right">
+                <ul class="clearfix">
+                    <li class="icons">
+                        <div class="user-img c-pointer">
+                            <div class="wallet-widget">
+                                <div id="prepare">
+                                    <button class="btn btn-primary btn-sm" id="btn-connect" onclick="onConnect()"
+                                            style="opacity: 0;">
+                                        <i class="fa fa-power-off"></i> Connect
+                                    </button>
+                                </div>
+
+                                <div id="connected" style="display: none">
+                                    <div class="connected_account">
+                                        <button alt="Disconnect" class="btn btn-primary btn-sm"
+                                                id="btn-disconnect" onclick="onDisconnect()">
+                                            <i class="fa fa-plug connected-icon"></i> Disconnect
+                                        </button>
+                                    </div>
+                                </div><!-- wallet-widget -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--**********************************
+        Header end ti-comment-alt
+    ***********************************-->
+
+
+    <!--**********************************
+        Content body start
+    ***********************************-->
+    <div class="content-body">
+        <div class="container">
+            <div class="row justify-content-between mb-4 mt-4">
+                <div class="col-xl-4 text-left">
+                    <h2 class="page-heading">MoonDayPlus.com</h2>
+                    <p class="mb-0">How far will you go?</p>
+                </div>
+                <div class="col-xl-8">
+                    <div class="crypto-ticker">
+                        <ul id="webticker-big">
+                            <li>
+                                <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xcb696c86917175dfb4f0037ddc4f2e877a9f081a"
+                                   target="t_blank">
+                                    <img alt="uniswap" height="25px" src="./stake/cute/uniswap.png" width="25px"/>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://coinmarketcap.com/currencies/moondayplus/" target="t_blank">
+                                    <img alt="coinmarketcap" height="25px" src="./stake/cute/coinmarketcap.png"
+                                         width="25px"/>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.coingecko.com/en/coins/moon-day-plus" target="t_blank">
+                                    <img alt="coingecko" height="25px" src="./stake/cute/coingecko.webp" width="25px"/>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://www.dextools.io/app/uniswap/pair-explorer/0x6bc6c7b62176ca121cc94089236beca904bab602"
+                                   target="t_blank">
+                                    <img alt="dext" height="25px" src="./stake/cute/dext.png" width="25px"/>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://opensea.io/collection/moondayplus-collectible" target="t_blank">
+                                    <img alt="opensea" height="25px" src="./stake/cute/opensea.png" width="100px"/>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://t.me/Moondayplus" target="t_blank">
+                                    <img alt="telegram" height="25px" src="./stake/cute/telegram.png" width="25px"/>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://twitter.com/MoondayPlus" target="t_blank">
+                                    <img alt="twitter" height="25px" src="./stake/cute/twitter.png" width="25px"/>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://www.reddit.com/user/moondayplus/" target="t_blank">
+                                    <img alt="reddit" height="25px" src="./stake/cute/reddit.png" width="25px"/>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="https://medium.com/@moondayplus" target="t_blank">
+                                    <img alt="medium" height="25px" src="./stake/cute/medium.png" width="40px"/>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/bitcoin4cashqc/moondayplus.com" target="t_blank">
+                                    <img alt="github" height="25px" src="./stake/cute/github.png" width="25px"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-xxl-4 col-xl-4">
+                            <div class="card stat-widget-one">
+                                <div class="card-body">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <h4 class="mb-3">Your RD Balance</h4>
+
+                                            <h3 class="mb-6">
+                                                <span class="counter" id="userBl">0</span> RD
+                                            </h3>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <span class="badge text-primary">
+                                             Total Supply
+                                        </span>
+                                        <span>
+                                            <span class="counter" id="totalSupply">0</span> RD
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xxl-4 col-xl-4">
+                            <div class="card stat-widget-one">
+                                <div class="card-body">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <h4 class="mb-3">Your DB Balance</h4>
+
+                                            <h3 class="mb-6">
+                                                <span class="counter" id="userDBBl">0</span> DB
+                                            </h3>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <span class="badge text-primary">
+                                             Total Supply
+                                        </span>
+                                        <span>
+                                            <span class="counter" id="totalDBSupply">0</span> DB
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-6 col-xxl-4 col-xl-4">
+                            <div class="card stat-widget-one">
+                                <div class="card-body">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <h4 class="mb-3">Your Total Stake</h4>
+
+                                            <h3 class="mb-6">
+                                                <span class="counter" id="userTotalDep">0</span> RD
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <span class="badge text-primary">
+                                            Your Total Stakes Number
+                                        </span>
+                                        <span>
+                                            <span class="counter" id="stakeNumber">0</span> Stakes
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="card-title">Infos</h4>
+                            <div class="card-action">
+                                <a data-action="collapse" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body collapse">
+                            <center>
+                                <h1>Rare Dogecoin </h1>
+
+                                <p>
+                                    ******************************************<br>
+                                    <a href="./stake/whitepaper.RDf">
+                                        <h2>Whitepaper</h2>
+                                    </a>
+                                    <br>
+                                    ******************************************
+                                    <br><br>
+
+                                    <a href="https://bscscan.com/address/0x336A11EED698c85B9cEf50c91A83764A674F20cA"
+                                       target="t_blank">Rare Dogecoin deployed
+                                    </a>
+                                    <br><br>
+                                    <a href="https://bscscan.com/address/0x7907d9640949c298E30A25bFaF3dE31424A98A7e"
+                                       target="t_blank">Doge Booster deployed</a>
+                                    
+                                    <br><br>
+                                    ******************************************
+                                </p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="card-title">Create Ref Code</h4>
+                            <div class="card-action">
+                                <a data-action="collapse" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body collapse">
+                            <div class="buy-token mt-4">
+                                <div class="basic-form">
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-12">
+                                            <label for="yourrefferal">Your affiliate link</label>
+                                            <input class="form-control" id="yourrefferal" name="yourrefferal" disabled
+                                                   placeholder="Your Refferal Link" type="text"/>
+                                        </div>
+                                    </div>
+
+                                    <center>
+                                        <div class="" role="group">
+                                            <button class="btn btn-block btn-primary qx_btn" id="" onclick="createRefCode()">
+                                                Create Ref Code
+                                            </button>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="card-title">Stake</h4>
+                            <div class="card-action">
+                                <a data-action="collapse" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body collapse">
+                            <div class="buy-token mt-4">
+                                <div class="basic-form">
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-12">
+                                            <label for="refferal">Refferer</label>
+                                            <input class="form-control" disabled id="refferal"
+                                                   name="refferal" placeholder="Refferal (Leave empty if needed)"
+                                                   type="text"/>
+                                        </div>
+
+                                        <div class="form-group col-xl-12">
+                                            <label for="mdstakes">RD to stake</label>
+                                            <input class="form-control" id="rdstakes" name="RDstakes"
+                                                   placeholder="RD to stake" type="number"/>
+                                        </div>
+                                    </div>
+
+                                    <center>
+                                        <div class="" role="group">
+                                            <button class="btn btn-block btn-primary qx_btn" id="" onclick="stakes()">
+                                                Stake
+                                            </button>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="card-title">Increase bonus rate</h4>
+                            <div class="card-action">
+                                <a data-action="collapse" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body collapse">
+                            <div class="buy-token mt-4">
+                                <div class="basic-form">
+                                    <p>You can increase bonus rate as 0.1% up to 2% by 0.05 BNB</p>
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-12">
+                                            <label for="mdstakes">Rate Percentage</label>
+                                            <input class="form-control" id="rateAmount" name="rateAmount"
+                                                   placeholder="How much Rate percentage do you want to increase" type="number"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-12">
+                                            <label for="mdstakes">Stake Index</label>
+                                            <input class="form-control" id="stakeIndex" name="stakeIndex"
+                                                   placeholder="Stake Index Number" type="number"/>
+                                        </div>
+                                    </div>
+
+                                    <center>
+                                        <div class="" role="group">
+                                            <button class="btn btn-block btn-primary qx_btn" id="" onclick="increaseRate()">
+                                                Increase Rate
+                                            </button>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="card-title">Use DB Token to boost bonus rate</h4>
+                            <div class="card-action">
+                                <a data-action="collapse" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-down"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body collapse">
+                            <div class="buy-token mt-4">
+                                <div class="basic-form">
+                                    <p>You can increase bonus rate as 4.9% by using 1 DB.</p>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group col-xl-12">
+                                            <label for="mdstakes">Stake Index</label>
+                                            <input class="form-control" id="stakeIndexToBoost" name="stakeIndexToBoost"
+                                                   placeholder="Stake Index Number" type="number"/>
+                                        </div>
+                                    </div>
+
+                                    <center>
+                                        <div class="" role="group">
+                                            <button class="btn btn-block btn-primary qx_btn" id="" onclick="useBooster()">
+                                                Use DB
+                                            </button>
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12 col-xxl-12 col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="card-title">Your Stakes</h4>
+                            <div class="card-action">
+                                <a data-action="collapse" href="javascript:void(0)"><i
+                                        class="mdi mdi-arrow-down"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card-body collapse">
+                            <div class="table-responsive">
+                                <table class="table table-responsive-sm">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Stake ID</th>
+                                        <th scope="col">Amount Staked</th>
+                                        <th scope="col">Reward Amount</th>
+                                        <th scope="col">Amount Claimed</th>
+                                        <th scope="col">Bonus Rate</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="stakess">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!--**********************************
+    Content body end
+***********************************-->
+
+
+<!--**********************************
+    Footer start
+***********************************-->
+<div class="footer">
+    <div class="copyright">
+        <p>
+            <strong>raredogecoin.com © 2021-2022</strong>
+        </p>
+    </div>
+</div>
+<!--**********************************
+    Footer end
+***********************************-->
+<div class="modal fade" id="providerModal" tabindex="-1" role="dialog" aria-labelledby="providerModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="provider">
+                            <button class="provider-item" id="connectToMetamask">
+                                <div class="provider-item-img">
+                                    <img src="/img/metamask.png" style="height: 32px;">
+                                </div>
+                                <div class="provider-item-text">Metamask</div>
+                            </button>
+                        </div>
+
+                        <div class="provider">
+                            <button class="provider-item" id="connectToBinance">
+                                <div class="provider-item-img">
+                                    <img src="/img/binance.svg" style="height: 32px;"> 
+                                </div>
+                                <div class="provider-item-text">Binance Chain Wallet</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--**********************************
+    Main wrapper end
+***********************************-->
+
+<!--**********************************
+    Scripts
+***********************************-->
+<script src="./stake/assets/plugins/common/common.min.js"></script>
+<script src="./stake/js/custom.min.js"></script>
+<script src="./stake/js/settings.js"></script>
+<script src="./stake/js/quixnav.js"></script>
+<script src="./stake/js/styleSwitcher.js"></script>
+
+
+<!-- ChartJS -->
+<script src="./stake/assets/plugins/chart.js/Chart.bundle.min.js"></script>
+<!-- Ticker -->
+<script src="./stake/assets/plugins/webticker/jquery.webticker.min.js"></script>
+
+<!--  flot-chart js -->
+<script src="./stake/assets/plugins/flot/jquery.flot.js"></script>
+<script src="./stake/assets/plugins/flot/jquery.flot.resize.js"></script>
+
+<!-- Counter Up -->
+<script src="./stake/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+<script src="./stake/assets/plugins/jquery.counterup/jquery.counterup.min.js"></script>
+
+<!--<script src="./stake/js/dashboard/dashboard-1.js"></script>-->
+
+<script src="https://unpkg.com/web3@1.2.11/dist/web3.min.js" type="text/javascript"></script>
+<script src="./stake/abis.js"></script>
+
+
+<script src="https://unpkg.com/@walletconnect/web3-provider@latest/dist/umd/index.min.js"
+        type="text/javascript"></script>
+
+<script src="./stake/mainweb3.js"></script>
+
+<script>
+    if ($('#webticker-big').length) {
+
+        $("#webticker-big").webTicker({
+            height: 'auto',
+            duplicate: false,
+            startEmpty: false,
+            //rssfrequency: 5,
+            // startEmpty: true
+        });
+    }
+</script>
+
+</body>
+
+</html>
