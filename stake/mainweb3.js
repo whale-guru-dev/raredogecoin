@@ -515,9 +515,9 @@ async function updateStakesTable() {
             totalStaked = totalStaked + web3.utils.fromWei(stakedData.amount, "ether") * 1.0;
             tableHtml = tableHtml + `<tr>
                 <td>${i+1}</td>
-                <td>${(web3.utils.fromWei(stakedData.amount, "ether") * 1.0).toFixed(8)} PD</td>
-                <td>${(web3.utils.fromWei(claimAmount, "ether") * 1.0).toFixed(8)} PD</td>
-                <td>${(web3.utils.fromWei(stakedData.claimed, "ether") * 1.0).toFixed(8)} PD</td>
+                <td>${(web3.utils.fromWei(stakedData.amount, "ether") * 1.0).toFixed(8)} RD</td>
+                <td>${(web3.utils.fromWei(claimAmount, "ether") * 1.0).toFixed(8)} RD</td>
+                <td>${(web3.utils.fromWei(stakedData.claimed, "ether") * 1.0).toFixed(8)} RD</td>
                 <td>${stakedData.bonusRate / 10} %</td>
                 <td>${new Date(stakedData.stakeTime*1000).toLocaleDateString()}</td>
                 <td>
